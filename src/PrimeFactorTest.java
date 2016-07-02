@@ -41,4 +41,13 @@ public class PrimeFactorTest {
         expected.add(13);
         assertEquals(expected,primeGenerator.getPrimes(169));
     }
+
+    @org.junit.Test
+    public void minusTen(){
+        ArrayList expected = new ArrayList();
+        expected.add(-1);
+        expected.add(2);
+        expected.add(5);
+        assertEquals(expected,primeGenerator.getPrimes(-10));
+    }
 }
